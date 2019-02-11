@@ -10,4 +10,10 @@ describe Account do
     a.deposit(100)
     expect(a.balance).to eq(100)
   end
+
+  it "it can be debited" do
+    a.deposit(100)
+    a.withdraw(50)
+    expect(a.balance).to eq(50)
+  end
 end
