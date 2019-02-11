@@ -39,7 +39,7 @@ describe Account do
   end
 
   context 'Printing statements' do
-    d = Account.new(0)
+    d = Account.new
     it 'responds to #print_statement' do
       expect(d).to respond_to(:print_statement)
     end

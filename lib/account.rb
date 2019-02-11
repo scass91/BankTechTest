@@ -23,6 +23,6 @@ class Account
   end
 
   def print_statement
-    @statement.print(@history)
+    @statement.formatted(@history)
   end
 end
