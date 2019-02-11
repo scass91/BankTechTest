@@ -25,16 +25,15 @@ describe Account do
     end
   end
 
-  context 'Transaction history' do
-    c = Account.new
-    c.credit(100)
-    it 'it shows a history of transactions when adding money' do
-      expect(c.history).to eq([100, 0, 100])
-    end
-
-    it 'it shows a history of transactions when removing money' do
-      c.debit(50)
-      expect(c.history).to eq([0, 50, 50])
-    end
-  end
+  # context 'Transaction history' do
+  #   c = Account.new
+  #   c.credit(100)
+  #   it 'it shows a history of transactions when adding money' do
+  #     expect(c.history).to eq([100, 0, 100])
+  #   end
+  #
+  #   it 'it shows a history of transactions when removing money' do
+  #     c.debit(50)
+  #     expect(c.history).to eq([0, 50, 50])
+  #   end
 end
