@@ -1,5 +1,5 @@
-require 'transaction'
-# Rubocop
+require_relative 'transaction'
+# RubocopWeve
 class Account
   NEWACCBALANCE = 0
 
@@ -12,11 +12,11 @@ class Account
 
   def credit(earnings)
     @balance += earnings
-    @history.clear.push(Transaction.new(earnings, 0, @balance))
+    @history.push(Transaction.new(earnings, 0, @balance))
   end
 
   def debit(spendings)
-    @history.clear.push(Transaction.new(0, spendings, @balance - spendings))
+    @history.push(Transaction.new(0, spendings, @balance - spendings))
     spendings <= @balance ? @balance += -spendings : 'Your balance is too low!'
   end
 end
