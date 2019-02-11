@@ -1,13 +1,10 @@
 require_relative 'transaction'
 # rubocop
 class Statement
-  def initialize(credit, debit, balance)
-    @credit = credit
-    @balance = balance
-    @debit = debit
-  end
-
-  def formatted
-    "|| #{@credit.zero? ? '' : @credit} || #{@debit.zero? ? '' : @debit}|| #{@balance}"
+  def formatted(history)
+    puts 'Credit || Debit || Balance'
+    history.reverse_each do |statement|
+      puts "#{statement.credit} || #{statement.debit} || #{statement.balance}"
+    end
   end
 end

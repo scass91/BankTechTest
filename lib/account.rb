@@ -1,14 +1,16 @@
 require_relative 'transaction'
-# RubocopWeve
+require_relative 'statement'
+
+# Rubocop
 class Account
+  attr_accessor :balance, :history
   NEWACCBALANCE = 0
 
-  def initialize
+  def initialize(statement = Statement.new)
     @balance = NEWACCBALANCE
     @history = []
+    @statement = statement
   end
-
-  attr_accessor :balance, :history
 
   def credit(earnings)
     @balance += earnings
@@ -20,5 +22,7 @@ class Account
     spendings <= @balance ? @balance += -spendings : 'Your balance is too low!'
   end
 
-  
+  def print_statement
+    @statement.print(@history)
+  end
 end

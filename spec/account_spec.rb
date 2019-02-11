@@ -39,10 +39,9 @@ describe Account do
   end
 
   context 'Printing statements' do
-    d = Account.new
-    it "it shows a blank statement for nil balance" do
-      expect(d.print_statement).to eq("|| || || 0")
+    d = Account.new(0)
+    it 'responds to #print_statement' do
+      expect(d).to respond_to(:print_statement)
     end
   end
-
 end
