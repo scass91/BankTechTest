@@ -1,6 +1,5 @@
 # Rubocop
 class Account
-
   NEWACCBALANCE = 0
 
   def initialize
