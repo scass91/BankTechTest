@@ -6,11 +6,11 @@ class Account
 
   attr_reader :balance
 
-  def deposit(earnings)
+  def credit(earnings)
     @balance += earnings
   end
 
-  def withdraw(spendings)
+  def debit(spendings)
     spendings <= @balance ? @balance += -spendings : 'Your balance is too low!'
   end
 end
