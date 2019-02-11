@@ -1,0 +1,3 @@
+# rubocop
+class Transaction
+end

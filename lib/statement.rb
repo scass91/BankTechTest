@@ -1,0 +1,3 @@
+# rubocop
+class Statement
+end
