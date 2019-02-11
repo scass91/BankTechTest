@@ -15,4 +15,8 @@ describe Account do
     a.withdraw(50)
     expect(a.balance).to eq(50)
   end
+
+  it "it cannot withdraw more money than is in the account balance" do
+    expect(a.withdraw(150)).to eq("Your balance is too low!")
+  end
 end
