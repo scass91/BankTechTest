@@ -37,4 +37,12 @@ describe Account do
       expect(c.history[1].debit).to eq(50)
     end
   end
+
+  context 'Printing statements' do
+    d = Account.new
+    it "it shows a blank statement for nil balance" do
+      expect(d.print_statement).to eq("|| || || 0")
+    end
+  end
+
 end

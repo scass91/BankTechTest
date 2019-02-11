@@ -19,4 +19,6 @@ class Account
     @history.push(Transaction.new(0, spendings, @balance - spendings))
     spendings <= @balance ? @balance += -spendings : 'Your balance is too low!'
   end
+
+  
 end
