@@ -11,6 +11,6 @@ class Account
   end
 
   def withdraw(spendings)
-    spendings <= @balance ? @balance += -spendings : "Your balance is too low!"
+    spendings <= @balance ? @balance += -spendings : 'Your balance is too low!'
   end
 end
