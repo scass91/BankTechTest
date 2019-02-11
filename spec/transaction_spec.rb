@@ -6,5 +6,13 @@ describe Transaction do
     it 'it can store deposits' do
       expect(a.credit).to eq(100)
     end
+
+    it 'it can store balances' do
+      expect(a.balance).to eq(100)
+    end
+
+    it 'it can store withdrawn amounts' do
+      expect(a.debit).to eq(0)
+    end
   end
 end
