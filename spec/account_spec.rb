@@ -12,7 +12,6 @@ describe Account do
   end
 
   it "it can be debited" do
-    a.deposit(100)
     a.withdraw(50)
     expect(a.balance).to eq(50)
   end

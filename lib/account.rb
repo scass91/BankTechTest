@@ -8,8 +8,11 @@ class Account
     @balance
   end
 
-  def deposit(amount)
-    @balance = @balance + amount
+  def deposit(earnings)
+    @balance += earnings
   end
 
+  def withdraw(spendings)
+    @balance += -spendings
+  end
 end
