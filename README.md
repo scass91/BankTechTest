@@ -1,5 +1,7 @@
 # Bank tech test
 
+[![Build Status](https://travis-ci.com/scass91/BankTechTest.svg?branch=master)](https://travis-ci.com/scass91/BankTechTest)
+
 # My Approach
 
 1. I wrote out the user stories from the acceptance criteria
