@@ -5,4 +5,9 @@ describe Account do
   it "Has a starter balance of 0" do
     expect(a.balance).to eq(0)
   end
+
+  it "it can receive deposits" do
+    a.deposit(100)
+    expect(a.balance).to eq(100)
+  end
 end
