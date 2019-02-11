@@ -1,12 +1,10 @@
+# Rubocop
 class Account
-
-  def initialize()
+  def initialize
     @balance = 0
   end
 
-  def balance
-    @balance
-  end
+  attr_reader :balance
 
   def deposit(earnings)
     @balance += earnings
