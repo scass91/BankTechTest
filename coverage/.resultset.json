@@ -115,8 +115,6 @@
         1,
         1,
         null,
-        null,
-        null,
         null
       ],
       "/Users/simon/Projects/BankTechTest/spec/statement_spec.rb": [
@@ -172,6 +170,6 @@
         null
       ]
     },
-    "timestamp": 1549982344
+    "timestamp": 1549982718
   }
 }
