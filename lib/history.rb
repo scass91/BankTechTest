@@ -1,3 +1,0 @@
-# rubocop
-class History
-end
