@@ -6,11 +6,13 @@ class Statement
   end
 
   def formatted(history)
-    body = ''
-    body << headers
+    views = '' << headers
     history.reverse_each do |statement|
-      body << "#{statement.date} || #{statement.credit.zero? ? '' : format('%.2f', statement.credit)} || #{statement.debit.zero? ? '' : format('%.2f', statement.debit)}|| #{format('%.2f', statement.balance)}\n"
+      views << "#{statement.date} ||\
+ #{statement.credit.zero? ? '' : format('%.2f', statement.credit)} ||\
+ #{statement.debit.zero? ? '' : format('%.2f', statement.debit)}||\
+ #{format('%.2f', statement.balance)}\n"
     end
-    puts body
+    puts views
   end
 end
