@@ -1,7 +1,8 @@
 # Bank tech test
 
 [![Build Status](https://travis-ci.com/scass91/BankTechTest.svg?branch=master)](https://travis-ci.com/scass91/BankTechTest)
-[![Coverage Status](https://coveralls.io/repos/github/scass91/BankTechTest/badge.svg?branch=master)](https://coveralls.io/github/scass91/BankTechTest?branch=master)
+[![Maintainability](https://api.codeclimate.com/v1/badges/9a83f46cbe1015ee3908/maintainability)](https://codeclimate.com/github/scass91/BankTechTest/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/9a83f46cbe1015ee3908/test_coverage)](https://codeclimate.com/github/scass91/BankTechTest/test_coverage)
 
 ## Getting started
 
