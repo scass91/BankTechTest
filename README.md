@@ -30,14 +30,14 @@ To run the tests within terminal: `rspec`
 
 1. I wrote out the user stories from the acceptance criteria
 2. I diagrammed what I would need in order to separate class and responsibility
-3. After that, I attempted to TDD my code in as simple a fashion as possible
-4. I split out the program into 4 classes initially;
+3. I split out the program into 4 classes initially;
 ```
 Account
 Statement
 History
 Transaction
 ```
+4. My approach involved utilising the red-green-refactor TDD cycle
 5. I decided that History & Statement did fairly similar things when I got to making my code, so I removed the History class
 6. I kept in mind the below user stories, which helped to steer my build direction
 
