@@ -7,4 +7,5 @@ group :test do
   gem 'rubocop'
   gem 'simplecov'
   gem 'simplecov-console'
+  gem 'coveralls', require: false
 end
