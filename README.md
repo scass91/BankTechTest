@@ -1,6 +1,7 @@
 # Bank tech test
 
 [![Build Status](https://travis-ci.com/scass91/BankTechTest.svg?branch=master)](https://travis-ci.com/scass91/BankTechTest)
+[![Coverage Status](https://coveralls.io/repos/github/scass91/BankTechTest/badge.svg?branch=master)](https://coveralls.io/github/scass91/BankTechTest?branch=master)
 
 # My Approach
 
