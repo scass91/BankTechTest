@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 
 group :test do
-  gem 'coveralls' 
+  gem 'coveralls'
   gem 'rspec'
   gem 'rubocop'
   gem 'simplecov'
