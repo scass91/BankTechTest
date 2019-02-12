@@ -1,7 +1,6 @@
 require_relative 'transaction'
 # rubocop
 class Statement
-
   def headers
     puts 'Date || Credit || Debit || Balance'
   end
