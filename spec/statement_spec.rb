@@ -8,7 +8,7 @@ describe Statement do
 
   context 'Formatting of a bank statement' do
     it 'returns a bank statment with a list of debits, credits & a balance' do
-      expect { s.formatted([transaction]) }.to output("Credit || Debit || Balance\n1000 || 0 || 1000\n").to_stdout
+      expect { s.formatted([transaction]) }.to output("Credit || Debit || Balance\n1000.00 || 0.00 || 1000.00\n").to_stdout
     end
   end
 end

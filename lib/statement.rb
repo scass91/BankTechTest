@@ -4,7 +4,7 @@ class Statement
   def formatted(history)
     puts 'Credit || Debit || Balance'
     history.reverse_each do |statement|
-      puts "#{statement.credit} || #{statement.debit} || #{statement.balance}"
+      puts "#{format('%.2f', statement.credit)} || #{format('%.2f', statement.debit)} || #{format('%.2f', statement.balance)}"
     end
   end
 end
