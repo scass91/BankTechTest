@@ -16,8 +16,8 @@ describe Transaction do
     end
 
     it 'it contains a date' do
-      allow(a).to receive(:date) { "02/03/1991" }
-      expect(a.date).to eq("02/03/1991")
+      allow(a).to receive(:date) { '02/03/1991' }
+      expect(a.date).to eq('02/03/1991')
     end
   end
 end

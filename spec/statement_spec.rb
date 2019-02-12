@@ -3,12 +3,12 @@ require './lib/statement.rb'
 describe Statement do
   s = Statement.new
   let(:transaction) do
-    double(:transaction, credit: 1000, debit: 0, balance: 1000)
+    double(:transaction, date: '02/03/1991', credit: 1000, debit: 0, balance: 1000)
   end
 
   context 'Formatting of a bank statement' do
-    it 'returns a bank statment with a list of debits, credits & a balance' do
-      expect { s.formatted([transaction]) }.to output("Credit || Debit || Balance\n1000.00 || 0.00 || 1000.00\n").to_stdout
+    it 'returns a bank statment with a list of dates, debits, credits & a balance' do
+      expect { s.formatted([transaction]) }.to output("Date || Credit || Debit || Balance\n02/03/1991 || 1000.00 || 0.00 || 1000.00\n").to_stdout
     end
   end
 end
