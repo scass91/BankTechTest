@@ -14,5 +14,10 @@ describe Transaction do
     it 'it can store withdrawn amounts' do
       expect(a.debit).to eq(0)
     end
+
+    it 'it contains a date' do
+      allow(a).to receive(:date) { "02/03/1991" }
+      expect(a.date).to eq("02/03/1991")
+    end
   end
 end
